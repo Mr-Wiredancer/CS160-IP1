@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/check_amount"
+	    />
+	<EditText
+		android:id="@+id/edittext"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		/>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/tip_percent"
+	    />
+	<RadioGroup android:layout_width="fill_parent" android:orientation="horizontal" android:layout_height="wrap_content">
+		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio_15" android:text="15%"></RadioButton>
+		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio_20" android:text="20%"></RadioButton>
+		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radio_25" android:text="25%"></RadioButton>
+	</RadioGroup>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="
+	    
+Tip:$"
+	    />
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Total:$
+	    
+	    
+	    "
+	    />
+	<Button android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Split bill"></Button>        	
+</LinearLayout>
